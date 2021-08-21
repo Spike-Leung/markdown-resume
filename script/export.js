@@ -3,7 +3,8 @@ const emoji = require("markdown-it-emoji");
 const marked = require("marked");
 const fs = require("fs");
 const path = require("path");
-const resumePath = path.resolve(__dirname, "../markdown", "resume.md");
+const config = require("../config/index.js");
+const resumePath = config["resume-path"] || path.resolve(__dirname, "../markdown", "resume.md");
 const targetHtmlPath = path.resolve(__dirname, "../dist", "resume.html");
 const stylePath = path.resolve(__dirname, "../style", "index.css");
 
