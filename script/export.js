@@ -4,8 +4,10 @@ const marked = require("marked");
 const fs = require("fs");
 const path = require("path");
 const config = require("../config/index.js");
-const resumePath = config["resume-path"] || path.resolve(__dirname, "../markdown", "resume.md");
-const targetHtmlPath = path.resolve(__dirname, "../dist", "resume.html");
+const resumePath =
+  config["resume-path"] || path.resolve(__dirname, "../markdown", "resume.md");
+const distPath = path.resolve(__dirname, "../dist");
+const targetHtmlPath = path.resolve(distPath, "resume.html");
 const stylePath = path.resolve(__dirname, "../style", "index.css");
 
 md.use(emoji);
@@ -29,9 +31,22 @@ function exportMarkdown2Html() {
 </body>
 `;
 
-      fs.writeFile(targetHtmlPath, output, (err) => {
-        err && console.error(err);
-      });
+      const writeFile = () => {
+        fs.writeFile(targetHtmlPath, output, (err) => {
+          err && console.error(err);
+
+          console.log("please open file:", targetHtmlPath);
+        });
+      };
+
+      if (!fs.existsSync(targetHtmlPath)) {
+        fs.mkdir(distPath, (err) => {
+          err && console.log(err);
+          writeFile();
+        });
+      } else {
+        writeFile();
+      }
     });
   });
 }
