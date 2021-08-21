@@ -36,6 +36,7 @@ function exportMarkdown2Html() {
           err && console.error(err);
 
           console.log("please open file:", targetHtmlPath);
+          console.log("print the html file with browser, and save as pdf");
         });
       };
 
