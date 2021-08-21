@@ -1,0 +1,16 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Spike <l-yanlei@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node ./script/dev.js",
+    "build": "node ./script/build.js"
+  },
+  "dependencies": {
+    "markdown-it": "^12.2.0",
+    "markdown-it-emoji": "^2.0.0",
+    "marked": "^3.0.0"
+  }
+}
