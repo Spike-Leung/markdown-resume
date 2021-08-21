@@ -34,6 +34,9 @@ yarn build # 生成html文件
 ![image](./image/print-setting.png)
 - 保存
 
+## Q&A
+### 导出 PDF 后， Emoji消失了
+目前测试下来，firefox 导出是消失了，Chrome可以正常导出，所以如果你用了 Emoji，就用 Chrome 进行导出吧。
 
 # 参考
 - [Complete list of github markdown emoji markup](https://gist.github.com/rxaviers/7360908)
