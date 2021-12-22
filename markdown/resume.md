@@ -1,16 +1,20 @@
 # 你的名字
-## :bust_in_silhouette: 基本信息
-- :phone: 电话：10086
-- :mailbox: Email：email@email.com
-- :birthday: 出生年月：2000/01
-- :office: 现居住地：上海
-- :hourglass_flowing_sand: 工作时间：N年
+:phone: 电话：10086  
+:mailbox: Email：<email@email.com>  
+:birthday: 出生年月：2000 / 01  
+:office: 现居住地：上海  
+:hourglass_flowing_sand: 工作时间：N年  
+
+## :hammer: 个人技能
+- Web开发： `JS`, `HTML`, `CSS`
+- 前端框架： `Vue`, `React`, `AngularJS`
+- 前端工具： `Sass`, `less`, `webpack`, `vite`, 
+- 版本管理、文档和自动化部署工具： `SVN`, `Git`, `git-flow`
+- 单元测试： `Chai`， `Mocha`
+- 云和开放平台： `Docker`, `K8S`
 
 ## :book: 教育经历
 - 2000-2000 XXXX大学 | XX | XX专业
-
-## :hammer: 个人技能
-- 熟练掌握 `JavaScript`，`CSS`，`HTML`
 
 ## :scroll: 工作经历
 ### XXX公司 XXX职位 2000 - 至今

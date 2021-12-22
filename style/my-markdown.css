@@ -5,6 +5,20 @@
 .my-markdown-body {
     max-width: 800px;
     margin: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.my-markdown-body p {
+    margin-bottom: 0;
+}
+
+.my-markdown-body h1 ~ p {
+    text-align: center;
+}
+
+.my-markdown-body h2 ~ p {
+    text-align: left;
 }
 
 .my-markdown-body h1 {
@@ -13,24 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--primary-color);
-    color: #fff;
+    color: #000;
     height: 60px;
+    border-bottom: 2px solid;
 }
 
 .my-markdown-body h2 {
-    color: var(--primary-color);
-}
-
-.my-markdown-body h1 {
-    border-bottom: 0;
-}
-
-.my-markdown-body h2 {
-    padding-bottom: 5px;
-    border-bottom: 3px var(--primary-color) dotted;
-}
-
-.my-markdown-body code {
-    color: var(--primary-color);
+    border: 0;
 }
