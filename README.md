@@ -41,7 +41,7 @@ yarn build # 生成html文件
 # 原理
 - 利用 [marked](https://github.com/markedjs/marked) 将写好的 Markdown 转化为 HTML
 - 使用一些额外的 HTML 标签，将 Markdown 转化的 HTML 包裹起来，加上类名，引入样式
-- 通过修改 HTML 的样式，实现各种效果，理论上你能用 HTML + CSS 实现的样式，你都可以应用到简历上
+- 通过修改 HTML 的样式，实现一定程度的美化
 - 再利用浏览器的打印功能，保存为 PDF
 
 # 优点
