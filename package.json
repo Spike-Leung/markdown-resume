@@ -11,6 +11,7 @@
   "dependencies": {
     "markdown-it": "^12.2.0",
     "markdown-it-emoji": "^2.0.0",
-    "marked": "^3.0.0"
+    "marked": "^3.0.0",
+    "ws": "^8.8.1"
   }
 }
