@@ -1,4 +1,3 @@
-# 你的名字
 ## :bust_in_silhouette: 基本信息
 - :phone: 电话：10086
 - :mailbox: Email：email@email.com

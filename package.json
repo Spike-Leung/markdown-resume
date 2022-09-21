@@ -4,14 +4,19 @@
   "main": "index.js",
   "author": "Spike <l-yanlei@hotmail.com>",
   "license": "MIT",
+  "type": "module",
   "scripts": {
-    "dev": "node ./script/dev.js",
-    "build": "node ./script/build.js"
+    "dev": "node ./src/script/dev.js",
+    "build": "node ./src/script/build.js"
   },
   "dependencies": {
     "markdown-it": "^12.2.0",
     "markdown-it-emoji": "^2.0.0",
     "marked": "^3.0.0",
     "ws": "^8.8.1"
+  },
+  "imports": {
+    "#root/*": "./*",
+    "#src/*": "./src/*"
   }
 }
