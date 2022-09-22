@@ -5,10 +5,12 @@ cd markdown-resume
 pnpm i
 
 # edit resume
-vim src/resume-template.md
+vim src/resume.md
 
 # generate resume.html
 pnpm run build
+
+# open dist/resume.html and print it
 ```
 
 # Edit Resume
