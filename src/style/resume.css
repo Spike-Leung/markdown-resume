@@ -1,0 +1,21 @@
+#custom {
+  max-width: 800px;
+  margin: auto;
+}
+
+#custom h1 {
+  border: 0;
+}
+
+#custom table {
+  display: table;
+}
+
+#custom tr,
+#custom td {
+  border: 0;
+}
+
+#custom td {
+  padding-left: 0;
+}
