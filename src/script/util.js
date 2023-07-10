@@ -23,23 +23,30 @@ export function decorateHtml(html) {
         <meta charset="utf-8">
         <link rel="stylesheet" href="${stylePath}" type="text/css"></link>
       </head>
-      <body class="markdown-body" id="custom">
-        ${html}
+      <body class="markdown-body">
+        <div id="custom">
+          ${html}
+        </div>
         <script src="${websocketPath}"></script>
       </body>
      </html>
 `;
 }
 
-async function saveAsHtml(dist, content) {
+export async function exportMarkdown2Html() {
+  const html = await convertMarkdown2Html();
+  const content = decorateHtml(html);
+
   try {
-    await writeFile(dist, content);
+    await access(distPath);
+    save(distPath, content);
   } catch (e) {
-    console.log(e);
+    await mkdir(distPath);
+    save(distPath, content);
   }
 }
 
-export async function convertMd2Html() {
+export async function convertMarkdown2Html() {
   try {
     const data = await readFile(resumePath, "utf8");
     const html = await marked(data);
@@ -50,15 +57,12 @@ export async function convertMd2Html() {
   }
 }
 
-export async function exportMarkdown2Html() {
-  const html = await convertMd2Html();
-  const content = decorateHtml(html);
-
+async function save(dist, content) {
   try {
-    await access(distPath);
-    saveAsHtml(distPath, content);
+    await writeFile(dist, content);
   } catch (e) {
-    await mkdir(distPath);
-    saveAsHtml(distPath, content);
+    console.log(e);
   }
+
+
 }
