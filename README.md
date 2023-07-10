@@ -18,8 +18,7 @@ pnpm run build
 - Or write your own `resume.md`, and change `resumePath` variable in `mardown-resume/config.js`
 
 # Custom style
-- Edit files in  `markdown-resume/style` to custom your resume style
-- A `custom` id is set on `<body>`, you can use `#custom` selector to custom html, or change it yourself
+- Edit files in  `markdown-resume/style` to custom your resume style, use `#custom` selector, or make it yourself
 
 # Export to pdf
 - Run build and open `markdown-resume/dist/resume.html` in browser
