@@ -9,6 +9,7 @@
 
 #custom table {
   display: table;
+  width: 100%;
 }
 
 #custom tr,
