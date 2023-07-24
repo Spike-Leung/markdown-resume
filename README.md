@@ -21,8 +21,14 @@ pnpm run build
 - Edit files in  `markdown-resume/style` to custom your resume style, use `#custom` selector, or make it yourself
 
 # Export to pdf
-- Run build and open `markdown-resume/dist/resume.html` in browser
+- `pnpm run build` then open `markdown-resume/dist/resume.html` in browser
 - Print it as pdf (You may need to set some printing options)
 
 # Preview
 - [[resume.pdf]](./screenshot/resume.pdf)
+
+# FAQ
+## Where to get icon?
+Check out [GitHub Emoji Picker](https://github-emoji-picker.rickstaa.dev/) !
+
+Find the icon you want,  copy the shortcode and paste to your resume.md, that's it :blush:
