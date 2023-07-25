@@ -63,6 +63,4 @@ async function save(dist, content) {
   } catch (e) {
     console.log(e);
   }
-
-
 }
